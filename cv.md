@@ -28,5 +28,46 @@
 - Graphic editors
  - Figma, Photoshop, Avocode
 - PixelPerfect
+## Code (js mMenu) 
+```js
+
+const mMenu = () => {
+  const menuBtn = document.querySelector('.menu-button'),
+        burger = document.querySelector('.line-center'),
+        mMenu = document.querySelector('.m-menu');
+  document.addEventListener('click', (e) => {
+      if(e.target.closest('.menu-button')){
+         burger.classList.toggle('line-center-active');
+       mMenu.classList.toggle('m-menu-visible');
+      } else if(!e.target.closest('.m-menu') || e.target.closest('.header__top__nav-link')){
+        burger.classList.remove('line-center-active');
+       mMenu.classList.remove('m-menu-visible');
+      }
+  });
+}
+
+```
+## Experience
+- My work project
+  - [Legal-aid](https://alexanderlonski.ru/legalaid-3/) 
+- My test projets:
+  - [Add tags](https://alexanderlonski.ru/testXBSoftware/) work with localStorage
+    - [Code](https://github.com/alexandrlonski/addtag) 
+  - [Web-focus](https://alexanderlonski.ru/test-web-focus/)
+  - [CashUback](https://alexanderlonski.ru/CachUback/)
+- 2021 Udemy - JavaScript + React
+  - [React-App](https://alexandrlonski.github.io/comments-app/)
+    - [Code](https://github.com/alexandrlonski/comments-app)
+- 2020 GLO Academy - JavaScript
+  - [Gym project](https://alexanderlonski.ru/js-diplom/)
+    - [Code](https://github.com/alexandrlonski/js-diplom)
+  - [3D project](https://alexanderlonski.ru/3D-model/)
+- 2020 GLO Academy - Web start
+  - [Fashion project](https://alexanderlonski.ru/fashion/)
+    - [Code](https://github.com/alexandrlonski/fashion)
+  - [Tour-plan project](https://alexandrlonski.github.io/tour-plan/)
+    - [Code](https://github.com/alexandrlonski/tour-plan)
+- 2020 SkillUp - Front End Developing
+
 
 
