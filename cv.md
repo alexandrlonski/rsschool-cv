@@ -68,6 +68,12 @@ const mMenu = () => {
   - [Tour-plan project](https://alexandrlonski.github.io/tour-plan/)
     - [Code](https://github.com/alexandrlonski/tour-plan)
 - 2020 SkillUp - Front End Developing
+## Education
+Minsk State Polytechnic College\
+Automated electric drive\
+2003-2006
 
+## English
+English A2, but I improve it
 
 
