@@ -5,7 +5,6 @@
   - Social networking service: [LinkedIn](https://www.linkedin.com/in/alexandr-lonski-6880851a3/)
   - Messenger: [Telegram](https://t.me/Alexandr_Lonski)
 
-
 ## Summary
   > I've been studying front-end for over a year now. At the moment, my main goal is to participate in commercial projects, thereby increasing my level of development. At this stage, I have a basic knowledge of HTML CSS JS, a little bit of React and Wordpress.Below are my main skills and a few of my projects.
 
@@ -28,8 +27,8 @@
 - Webpack 
 - Google PageSpeed Insights
 - Graphic editors
- - Figma, Photoshop, Avocode
-- PixelPerfect
+  - Figma, Photoshop, Avocode
+- PixelPerfect\
 
 ## Code (js mMenu) 
 ```js
@@ -71,6 +70,7 @@ const mMenu = () => {
   - [Tour-plan project](https://alexandrlonski.github.io/tour-plan/)
     - [Code](https://github.com/alexandrlonski/tour-plan)
 - 2020 SkillUp - Front End Developing
+
 
 ## Education
 Minsk State Polytechnic College\
