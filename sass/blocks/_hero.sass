@@ -1,0 +1,47 @@
+.hero
+  margin-top: 120px
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 20px
+    border-bottom: 1px solid #dedede
+  &__text
+    display: flex
+    flex-direction: column
+  &__block-name
+    margin-bottom: 30px
+  &__name
+    font-size: 35px
+    color: #3d3d3d
+    margin-bottom: 10px
+  &__specialty
+    margin-top: 0
+  &__image
+    max-width: 450px
+    border-radius: 10%
+
+@media screen and ( max-width: 991px )
+  .hero
+    &__title
+      font-size: 40px
+    &__image
+      max-width: 250px
+
+@media screen and ( max-width: 768px )
+  .hero
+    &__text
+      width: 100%
+    &__title
+      font-size: 35px
+    &__block-name
+      text-align: center
+@media screen and ( max-width: 768px )
+  .hero
+    &__container
+      flex-direction: column-reverse
+
+@media screen and ( max-width: 500px )
+  .hero
+    &__title
+      font-size: 25px
