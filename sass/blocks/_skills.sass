@@ -1,0 +1,61 @@
+.skills
+  margin-bottom: 30px
+  &__container
+    display: flex
+    justify-content: space-between
+    padding-bottom: 20px
+    border-bottom: 1px solid #dedede
+
+  &__title
+    margin-top: 10px
+    margin-bottom: 20px
+  &__list
+    display: block
+    margin: 0 auto
+  &__item
+    padding: 4px
+    font-size: 20px
+    font-weight: bold
+
+  &__sertificat
+    display: flex
+    max-width: 200px
+    &__wrapper
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+    &__image
+      display: block
+      max-width: 150px
+      margin-left: 10px
+      margin-right: 10px
+      margin-bottom: 20px
+      box-shadow: 0 0 10px rgba(0,0,0,0.5)
+      cursor: pointer
+      transition: all 0.5s ease
+
+@media screen and ( max-width: 860px )
+  .know
+    &__container
+      flex-wrap: wrap
+    &__wrapper
+      &-list
+        margin: auto
+    &__list
+      margin-bottom: 30px
+  .sertificat
+    &__block
+      margin: auto
+
+@media screen and ( max-width: 676px )
+  .know
+    &__list
+      width: auto
+    &__title
+      font-size: 25px
+
+@media screen and ( max-width: 500px )
+  .know
+    &__item
+      padding: 5px
+      font-size: 16px

@@ -1,0 +1,78 @@
+@media screen and ( max-width: 1200px )
+  .container
+    width: 90%
+@media screen and ( max-width: 500px )
+  .skills__item
+    font-size: 15px
+  h1
+    font-size: 27px
+  h2
+    font-size: 22px
+  h3
+    font-size: 18px
+  .underline::before
+    width: 50%
+
+  .experience
+    &__title
+      text-align: center
+    &__item
+      margin-left: 0
+      margin-right: 0
+@media(hover: hover) and (pointer: fine)
+  .header
+    &__item
+      &:hover
+        &:after
+          transform: scaleX(1)
+  .contacts
+    &:hover
+      .underline::before
+        width: 180px
+    &__link
+      &:hover
+        &:after
+          transform: scaleX(1)
+  .skills
+    &:hover
+      .underline::before
+        width: 80px
+  .code
+    &:hover
+      .underline::before
+        width: 250px
+  .summary
+    &:hover
+      .underline::before
+        width: 140px
+
+  .experience
+    &:hover
+      .underline::before
+        width: 160px
+    &__item
+      &-code
+        &:hover
+          background-color: #9cc9f3
+          color: #fff
+    &__link
+      &:hover
+        filter: grayscale(0)
+        transform: scale(1.05)
+    &__sertificat__image
+      &:hover
+        filter: grayscale(0)
+        transform: scale(1.05)
+  .education
+    &:hover
+      .underline::before
+        width: 150px
+  .english
+    &:hover
+      .underline::before
+        width: 110px
+  .footer
+    &__link
+      &:hover
+        &:after
+          transform: scaleX(1)

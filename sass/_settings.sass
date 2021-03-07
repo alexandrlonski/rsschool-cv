@@ -1,0 +1,61 @@
+*
+  box-sizing: border-box
+  outline: none
+@font-face
+  font-family: "HKGrotesk"
+  src: url('../fonts/HKGrotesk-Bold.woff2') format('woff2')
+
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: "HKGrotesk"
+  src: url('../fonts/HKGrotesk-Regular.woff2') format("woff2")
+
+  font-weight: normal
+  font-style: normal
+
+body
+  font-family: 'Marmelad', sans-serif
+
+.container
+  max-width: 1140px
+  margin: auto
+
+img
+  max-width: 100%
+  object-fit: cover
+
+a
+  text-decoration: none
+  color: black
+h1
+  color: #3d3d3d
+  position: relative
+h2
+  margin-top: 10px
+  margin-bottom: 20px
+
+h3
+
+.up
+  position: fixed
+  bottom: 20px
+  right: 20px
+  height: 30px
+  width: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: white
+  background-color: #646464
+  border-radius: 50%
+.underline::before
+  content: ""
+  position: absolute
+  left: 0
+  bottom: -5px
+  width: 0px
+  height: 2px
+  background-color: #f89e9e
+  transition: width .5s

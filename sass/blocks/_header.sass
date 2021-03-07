@@ -1,0 +1,113 @@
+.header
+  position: fixed
+  top: 0
+  width: 100%
+  padding-top: 20px
+  padding-bottom: 10px
+  background-color: white
+  border-bottom: 1px solid #d3d3d3
+  z-index: 9
+  &-container
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__list
+    display: flex
+
+  &__item
+    font-size: 18px
+    line-height: 25px
+    position: relative
+    margin-left: 8px
+    margin-right: 8px
+    list-style-type: none
+    &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: #d3d3d3
+      transform: scaleX(0)
+      transition: transform 0.2s
+
+  &__logo
+    width: 220px
+  &__top
+    &__nav
+      display: flex
+      flex-direction: column
+      align-items: center
+      &-link
+        padding: 10px 0
+.menu-button
+  display: none
+.m-menu
+  position: fixed
+  top: 84px
+  left: 150%
+  right: -150%
+
+  padding: 10px 20px 30px 20px
+  background: #ffffff
+  z-index: 9
+  box-shadow: 0px 12px 12px rgba(100, 100, 100, 0.4)
+  transition: all 0.5s
+  &-visible
+    left: 0
+    right: 0
+
+@media screen and ( max-width: 991px )
+  .header
+    &__list
+      display: none
+
+  .menu-button
+    display: block
+    position: relative
+    top: 0
+    left: 0
+    width: 22px
+    height: 17px
+    background-color: inherit
+    cursor: pointer
+  .line-center
+    position: absolute
+    top: 7.5px
+    width: 22px
+    height: 2px
+    background-color: black
+    transition: all 0.4s
+  .line-center-active
+    transform: rotate(90deg)
+    height: 0
+  .line-center::before
+    content: ""
+    display: block
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 22px
+    height: 2px
+    background-color: black
+    margin-top: -7px
+    transition: all 0.4s
+  .line-center::after
+    content: ""
+    display: block
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 22px
+    height: 2px
+    background-color: black
+    margin-top: 7px
+    transition: all 0.4s
+  .line-center-active::before
+    transform: rotate(45deg)
+    margin-top: 0px
+  .line-center-active::after
+    transform: rotate(-45deg)
+    margin-top: 0px
