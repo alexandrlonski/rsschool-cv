@@ -12,11 +12,32 @@
       margin: auto
 
   &__bottom
-    display: block
+    display: flex
+    justify-content: space-between
+    align-items: center
     padding-top: 20px
     padding-bottom: 20px
-    text-align: center
     border-top: 1px solid #d3d3d3
+    &-img
+      display: block
+      position: relative
+      width: 86px
+      height: 32px
+      margin-left: auto
+      padding-right: 111px
+      background-image: url(../img/footer/rs_school_js.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: left center
+      &::after
+        content: "'21"
+        position: absolute
+        bottom: -1px
+        right: 0
+        font-size: 21px
+        color: #000
+        line-height: 0.9
+        font-weight: 700
   &__link
     position: relative
     display: flex
